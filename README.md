@@ -1,27 +1,7 @@
-# Lesson4
+Почему мы должны использовать геттер и сеттер вместо того, чтобы просто устанавливать переменную в сервисе? Getters и Setters это специальные функции которые используются для управления свойствами доступа класса. Они по сути предоставляют неограниченное количество возможностей как можно написать реактивный и динамический функционал, в работе с обьектами. Get() - возвращает новое значение, эта функция работает как обычное поле в обьекте. Тоже самое косается значения set().
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.1.
+Как установить значение по умолчанию для свойства @Input () В Angular2+ мы можем передавать значение переменной между двумя компонентами (от родителя к потомку) с помощью декоратора Input. Используя эти декораторы Input, также можно установить значения свойств по умолчанию @Input() foo: string = 'bar';
 
-## Development server
+В чем разница между @ViewChild () и @ContentChild ()? Разница между @ViewChildren и @ContentChildren заключается в том, что @ViewChildren ищет элементы в Shadow DOM, а @ContentChildren - в Light DOM. Shadow DOM - это внутренний DOM компонента, который определен разработчиком (как создателем компонента) и скрыт от конечного пользователя. Light DOM - это DOM, который конечный пользователь компонента поставляет в компонент разработчика.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Почему мы добавляем providedIn: «root»? Cпособ внедрения зависимостей в Angular providedIn: 'root' Можно представить providedIn как внедрение зависимостей в обратном направлении: раньше в модуле описывались сервисы, в которые он будет подключен, теперь в сервисе определяется модуль, к которому его подключать. Сервис может быть внедрен в корень приложения(providedIn: 'root') или в любой модуль (providedIn: SomeModule). providedIn: 'root' является сокращением для внедрения в AppModule.
