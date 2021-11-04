@@ -1,0 +1,45 @@
+.book{
+    background: #f7f7f7;
+    padding: 15px;
+  border-radius: 10px;
+    &__detail{
+        &-title{
+            display: block;
+            margin-bottom: 15px;
+            font-size: 25px;
+            text-decoration: none;
+            color: #1baa86;
+        }
+        &-item{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    }
+    &__actions{
+      display: flex;
+      justify-content: space-between;
+        &-item{
+            display: block;
+            width: 49%;
+            height: 42px;
+            margin-bottom: 10px;
+            padding: 0 15px;
+            border: none;
+            font-size: 14px;
+            color: #ffffff;
+            cursor: pointer;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &:hover{
+                opacity: 0.8;
+            }
+            &--remove{
+                background: rgb(214, 46, 46);
+            }
+            &--update{
+                background: #4f9339;
+            }
+        }
+    }
+}
